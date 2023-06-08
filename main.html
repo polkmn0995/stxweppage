@@ -128,13 +128,121 @@
           <span class="visual-txt"
             >세계최고를 향해 STX건설이 힘차게 질주합니다!
           </span>
-          <button class="visual-bt">button</button>
+          <button class="visual-bt" onclick="scrollToSection('#business')">
+            button
+          </button>
         </div>
       </section>
+      <script>
+        function scrollToSection(sectionId) {
+          const section = document.querySelector(sectionId);
+          if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      </script>
       <!-- 비즈니스 -->
-      <section class="business"></section>
+      <section class="business" id="business">
+        <div class="business-inner container">
+          <div class="business-top">
+            <h1 class="business-title">
+              STX Engineering & Construction Business
+            </h1>
+            <p class="business-desc">
+              STX건설은 건문 역량 강화를 통해 건축, 주택, 토목, 플랜트 사업
+              영역에서
+              <br />
+              탁월한 성과를 인정받은 기업으로 자연과 기술의 공간에 인류의 가치를
+              추구합니다.
+            </p>
+          </div>
+          <div class="business-bottom clearfix">
+            <ul class="business-list clearfix">
+              <li>
+                <a href="#">건축사업</a>
+              </li>
+              <li>
+                <a href="#">주택사업</a>
+              </li>
+              <li>
+                <a href="#">토목사업</a>
+              </li>
+              <li>
+                <a href="#">플랜트/공작기계사업</a>
+              </li>
+              <li>
+                <a href="#">해외사업</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <!-- 뉴스 -->
-      <section class="news"></section>
+      <section class="news">
+        <!-- 뉴스배경 -->
+        <div class="news-bg"></div>
+        <!-- 뉴스 본 내용 -->
+        <div class="news-inner container clearfix">
+          <div class="news-wrap">
+            <h3>공지사항</h3>
+            <div class="news-content">
+              <ul class="news-list">
+                <li>
+                  <a href="#">
+                    <span class="news-txt"> 임시주주총회 개최의 건 </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt">
+                      제18기 정기주주총회 개최의 건
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt"> 사무실 이전 안내 </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt">
+                      에스티엑스건설자산관리 주식회사 해산결의에 따른 채권신고
+                      안내 공고 (2차)
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="news-wrap">
+            <h3>보도자료</h3>
+            <div class="news-content">
+              <ul class="news-list">
+                <li>
+                  <a href="#">
+                    <span class="news-txt"> 회생절차 종료 </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt">
+                      STX건설, 춘천 레고랜드 테마파크 시공사 '선정'
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt">
+                      STX건설, 2018년 성장 '청신호'
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- 고객센터 -->
       <section class="cs"></section>
       <!-- 회사소개 -->

@@ -32,11 +32,18 @@ body {
 }
 /* 공통 클래스 */
 .container {
+  position: relative;
+  display: block;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
   position: relative;
   display: block;
+  width: 100%;
+  clear: both;
 }
 /* 레이아웃 */
 .wrap {
@@ -52,7 +59,7 @@ body {
   left: 0;
   top: 0;
   z-index: 9999;
-  background-color: white;
+  /* background-color: white; */
   overflow: hidden;
   box-shadow: 1px 1px 2px rgb(148, 148, 148);
 }
@@ -78,7 +85,7 @@ body {
   top: 81px;
   width: 100%;
   height: 330px;
-  background: rgba(0, 0, 0, 0.589);
+  background: rgba(0, 0, 0, 0.5);
 }
 .header-inner {
   position: relative;
@@ -143,7 +150,6 @@ body {
   color: white;
   font-size: 15px;
   line-height: 1.92;
-  font-weight: bold;
 }
 .lang {
   position: absolute;
@@ -217,4 +223,225 @@ body {
   width: 60px;
   height: 5px;
   background-color: #ed1c24;
+}
+.visual-txt {
+  position: relative;
+  display: block;
+  font-size: 21px;
+  color: white;
+  margin-top: 30px;
+}
+.visual-bt {
+  position: absolute;
+  left: calc(50% - 33px / 2);
+  display: block;
+  width: 33px;
+  height: 33px;
+  background: url(../images/bg_common.png) no-repeat;
+  background-position: -122px 0;
+  border: 0;
+  font-size: 0;
+  bottom: 40px;
+  cursor: pointer;
+}
+/* 비즈니스 */
+.business {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 190px 0;
+  background: #f8f8f8;
+}
+.business-inner {
+  position: relative;
+  display: block;
+}
+.business-top {
+  position: relative;
+  display: block;
+  margin-bottom: 70px;
+}
+.business-title {
+  position: relative;
+  display: block;
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 31px;
+  color: #111;
+}
+.business-title::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 37px / 2);
+  bottom: 0;
+  display: block;
+  width: 37px;
+  height: 4px;
+  background-color: #ff0000;
+}
+.business-desc {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 25px;
+}
+.business-bottom {
+  position: relative;
+  display: block;
+}
+.business-list {
+  position: relative;
+  display: block;
+}
+.business-list > li {
+  position: relative;
+  display: block;
+  width: calc(100% / 5);
+  height: 420px;
+  float: left;
+  background: url(../images/img_business.png) no-repeat;
+  background-position: 0px 0px;
+}
+.business-list > li:nth-child(1) {
+  background-position: calc(240px * 0) 0px;
+}
+.business-list > li:nth-child(2) {
+  background-position: calc(240px * -1) 0px;
+}
+.business-list > li:nth-child(3) {
+  background-position: calc(240px * -2) 0px;
+}
+.business-list > li:nth-child(4) {
+  background-position: calc(240px * -3) 0px;
+}
+.business-list > li:nth-child(5) {
+  background-position: calc(240px * -4) 0px;
+}
+.business-list > li > a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(244, 128, 37, 0);
+  font-size: 24px;
+  transition: background 0.5s;
+}
+.business-list > li > a:hover {
+  background-color: rgba(244, 128, 37, 1);
+}
+.business-list > li > a::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 130px / 2);
+  bottom: 94px;
+  width: 130px;
+  height: 112px;
+  opacity: 0;
+  visibility: hidden;
+  background: url("../images/bg_common.png") no-repeat;
+  background-position: 0px 0px;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.business-list > li > a:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+.business-list > li:nth-child(1) > a::after {
+  background-position: -165px 0px;
+}
+.business-list > li:nth-child(2) > a::after {
+  background-position: -302px 0px;
+}
+.business-list > li:nth-child(3) > a::after {
+  background-position: 0 -116px;
+}
+.business-list > li:nth-child(4) > a::after {
+  background-position: -140px -116px;
+}
+.business-list > li:nth-child(5) > a::after {
+  background-position: -270px -116px;
+}
+
+/* 뉴스 */
+.news {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 55px 0;
+  background: #ed1c24;
+}
+.news-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: #58595b;
+}
+.news-inner {
+  position: relative;
+  display: block;
+}
+.news-wrap {
+  position: relative;
+  display: block;
+  width: calc(50% - 95px);
+}
+.news-inner .news-wrap:first-child {
+  float: left;
+}
+.news-inner .news-wrap:last-child {
+  float: right;
+}
+.news-wrap h3 {
+  position: relative;
+  display: block;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+.news-content {
+  position: relative;
+  display: block;
+}
+.news-list > li {
+  position: relative;
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 25px 0;
+}
+.news-list > li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.news-list > li > a {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+.news-list > li > a > .news-txt {
+  position: relative;
+  display: block;
+  width: 80%;
+  /* 말줄임 ... 표시하는법 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.news-list > li > a::after {
+  content: "";
+  position: absolute;
+  right: 29px;
+  top: 0;
+  width: 52px;
+  height: 23px;
+  background: url(../images/bg_common.png);
+  background-position: -50px 0px;
 }
