@@ -445,6 +445,191 @@ body {
   background: url(../images/bg_common.png);
   background-position: -50px 0px;
 }
+
+/* 고객센터 */
+.cs {
+  position: relative;
+  display: block;
+  padding: 60px 0;
+  background-color: #f8f8f8;
+  height: 320px;
+}
+.cs-inner {
+  position: relative;
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+}
 .faq {
+  position: relative;
+  display: block;
+  float: left;
   width: 599px;
+  height: 200px;
+  padding: 50px 60px;
+  background: url(../images/bg_faq.png) no-repeat 90% center #fff;
+}
+.customer {
+  position: relative;
+  display: block;
+  float: left;
+  margin-left: 2px;
+  width: 599px;
+  height: 200px;
+  padding: 50px 60px;
+  background: url(../images/bg_custom.png) no-repeat 90% center #fff;
+}
+.cs-title {
+  position: relative;
+  display: block;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+.cs-sub-txt {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  line-height: 23px;
+  font-size: 15px;
+}
+
+/* 회사소개 */
+.about {
+  position: relative;
+  display: block;
+  width: 63%;
+  margin: 98px auto;
+}
+.about-top {
+  position: relative;
+  display: block;
+  background: url(../images/img_about.png) no-repeat 100%;
+  height: 400px;
+}
+.about-top h2 {
+  position: relative;
+  display: block;
+  padding-top: 50px;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 50px;
+}
+.about-top p {
+  position: relative;
+  display: block;
+  margin-left: 90px;
+  margin-top: 27px;
+}
+.about-txt {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  line-height: 27px;
+}
+.about-sub-txt {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+}
+.about-txt::before {
+  content: "";
+  width: 37px;
+  height: 5px;
+  background: #ed1c24;
+  position: absolute;
+  top: 10px;
+  left: -90px;
+}
+.icon_area {
+  display: inline-block;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.icon_area li {
+  float: left;
+  width: 103px;
+  margin: 0 100px;
+}
+.img_ico1 a {
+  display: inline-block;
+  width: 103px;
+  height: 108px;
+  background-position: 0 0;
+  background: url(../images/bg_icon.png) no-repeat;
+  text-align: center;
+}
+.img_ico2 a {
+  display: inline-block;
+  width: 103px;
+  height: 108px;
+  background-position: 0 0;
+  background: url(../images/bg_icon.png) no-repeat 51%;
+  text-align: center;
+}
+.img_ico3 a {
+  display: inline-block;
+  width: 103px;
+  height: 108px;
+  background-position: -235px 0;
+  background: url(../images/bg_icon.png) no-repeat 102%;
+  text-align: center;
+}
+.icon_area li a span {
+  display: inline-block;
+  padding-top: 130px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* footer */
+.footer {
+  position: relative;
+  display: block;
+  padding: 50px 0;
+  background-color: #4e4e4e;
+}
+.footer-inner {
+  position: relative;
+  display: block;
+}
+.footer-logo {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 130px;
+}
+.footer-logo > img {
+  width: 122px;
+}
+.footer-info {
+  position: relative;
+  display: block;
+  float: left;
+}
+.footer-list {
+  position: relative;
+  display: block;
+}
+.footer-list > li {
+  position: relative;
+  display: block;
+  font-size: 13px;
+  color: #c3c3ce;
+  margin-bottom: 5px;
+}
+.footer-list > li > address {
+  position: relative;
+  display: block;
+  font-style: normal;
+}
+.footer-list > li > i {
+  position: relative;
+  display: inline-block;
 }
