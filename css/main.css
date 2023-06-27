@@ -633,3 +633,86 @@ body {
   position: relative;
   display: inline-block;
 }
+/* 탑 버튼 */
+.top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.top-button .chat-btn span {
+  position: absolute;
+  display: none;
+  top: 30px;
+  right: 80px;
+  width: 160px;
+  background-color: #fff;
+  border-radius: 23px;
+  box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+}
+.top-button .chat-btn:hover span {
+  display: block;
+}
+.top-button .chat-btn {
+  -webkit-animation: updown 1.5s infinite ease-in-out;
+  animation: updown 1.5s infinite ease-in-out;
+}
+.top-button .shop-btn {
+  position: relative;
+  display: block;
+  width: 55px;
+  line-height: 55px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.06),
+    inset 0px 5px 10px 0 rgba(255, 255, 255, 0.14);
+  letter-spacing: 0.5px;
+}
+.top-button .top-btn {
+  position: relative;
+  display: block;
+  width: 55px;
+  line-height: 55px;
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+}
+.top-button .top-btn img {
+  transform: rotate(180px);
+}
+.top-button .top-btn img.up {
+  transform: rotate(0deg);
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
