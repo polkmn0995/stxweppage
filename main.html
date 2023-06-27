@@ -39,15 +39,36 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+
+    <script src="js/html5shiv.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/script.js"></script>
+
     <!-- css 초기화 -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+
     <title>STX건설</title>
   </head>
   <body>
+    <!-- 안내창 -->
+    <div class="modal-wrap">
+      <div class="modal-main">
+        <span class="modal-logo">
+          <img src="images/사람 아이콘.png" alt="사람아이콘" />
+        </span>
+        <p class="modal-nonotic">
+          해당 사이트는 <strong>스터디용</strong>으로 제작되었으며,<br />
+          리소스는 <strong>원저작자</strong>에게 있음을 알려드립니다.<br />
+          문제사항이 있을 시 연락주시면 빠른 시일 내 조치하겠습니다.<br />
+          <span>본 사이트는 Chrome 에 최적화되어 있습니다.</span>
+        </p>
+        <div class="modal-close">확인했습니다. <i>( Click 하여 닫기 )</i></div>
+      </div>
+    </div>
     <!-- top button -->
     <div class="top-button">
-      <a href="#" class="chat-btn">
+      <a href="#" class="chat_btn">
         <img src="images/고객문의.png" alt="chat" />
         <span>무엇을 도와드릴까요?</span>
       </a>
