@@ -1,4 +1,12 @@
 window.onload = function () {
+  //비주얼 이동 버튼 스크롤 기능
+  const button = document.querySelector(".visual-bt");
+  // 버튼을 클릭했을 때 스크롤 이동 함수를 실행합니다.
+  button.addEventListener("click", function () {
+    scrollToSection("#business");
+  });
+  //scrollToSection()라는 이름의 함수를 정의함
+
   //스크롤 이동 함수 정의
   //scrollToSection()라는 이름의 함수를 정의함
   function scrollToSection(sectionId) {
@@ -7,9 +15,11 @@ window.onload = function () {
 
     //section이 존재하는 경우에만 스크롤 이동을 수행합니다.
     if (section) {
-      section.scrollIntoView({ begavior: "smooth" });
+      // 부드러운 스크롤 이동
+      section.scrollIntoView({ behavior: "smooth" });
     }
   }
+
   //top 버튼 스크롤 기능
   const topBtn = document.getElementById("top-btn");
   topBtn.addEventListener("click", function (event) {
@@ -27,7 +37,8 @@ window.onload = function () {
       });
     }
   });
-    //화살표 이미지 회전
+
+  //화살표 이미지 회전
   const topBtnImg = document.getElementById("top-btn-img");
   window.addEventListener("scroll", function (scTop) {
     scTop = this.document.documentElement.scrollTop;
@@ -36,5 +47,13 @@ window.onload = function () {
     } else {
       topBtnImg.classList.remove("up");
     }
+  });
+
+  // 안내창 스크립트
+  let body = document.querySelector("body");
+  let modal = document.querySelector(".modal-wrap");
+  modal.addEventListener("click", function () {
+    modal.style.display = "none";
+    fadeOut(modal);
   });
 };
